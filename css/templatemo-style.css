@@ -6,6 +6,7 @@ http://www.templatemo.com/tm-498-stimulus
 
 */
 
+
 body {
 	background: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
@@ -14,6 +15,13 @@ body {
     overflow-x: hidden;
 }
 
+.no-border {
+  border: 0 !important;
+}
+.swal-icon img{
+  width: 20px;
+  height: 20px;
+}
 html,body {
   width: 100%;
   height: 100%;
@@ -24,8 +32,12 @@ html,body {
     Typorgraphy              
 -----------------------------------------*/
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6  {
   font-style: normal;
+  font-weight: 300;
+}
+.swal2 {
+  font-style: normal !important;
   font-weight: 300;
 }
 

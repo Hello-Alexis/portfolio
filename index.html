@@ -22,7 +22,27 @@ http://www.templatemo.com/tm-498-stimulus
      <link rel="icon" href="./images/hacker.ico">
      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+     <script>
+     function myFunction() {
+     const Toast = Swal.mixin({
+         showConfirmButton: false,
+       timer: 3000,
+       timerProgressBar: true,
+       didOpen: (toast) => {
+          Swal.showLoading()
+         toast.addEventListener('mouseenter', Swal.stopTimer)
+         toast.addEventListener('mouseleave', Swal.resumeTimer)
+       }
+     })
+     
+     Toast.fire({
+         
+       title: 'This website is under construction'
+     })
+     }
+     </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -170,7 +190,7 @@ http://www.templatemo.com/tm-498-stimulus
 
 
 
-                                        
+
                                         </div>
 
 
@@ -241,12 +261,14 @@ http://www.templatemo.com/tm-498-stimulus
 
                                              </div>
                                              <h3> UI Design </h3>
+
                                              <div class="col-md-6 col-sm-6">
 
                                                   <!-- <i class="fa fa-desktop"></i> -->
                                                   <h3>iFly System</h3>
-                                                  <p></p>
-                                                  <a href="https://hello-alexis.github.io/iFly/" class="sectionex-btn btn btn-success"
+                                                  <p class="color-white">Check And Booking Air Ticket</p>
+                                                  <a href="https://hello-alexis.github.io/iFly/"
+                                                       class="sectionex-btn btn btn-success"
                                                        data-wow-delay="1.4s">Demo</a>
 
 
@@ -256,7 +278,8 @@ http://www.templatemo.com/tm-498-stimulus
 
                                                   <!-- <i class="fa fa-desktop"></i> -->
                                                   <h3>IMEI System</h3>
-                                                  <a href="#about" class="sectionex-btn btn btn-success"
+                                                  <p class="color-white">Permission To Acess Zone Control</p>
+                                                  <a onclick="myFunction()" class="sectionex-btn btn btn-success"
                                                        data-wow-delay="1.4s">Demo</a>
 
 
@@ -298,8 +321,9 @@ http://www.templatemo.com/tm-498-stimulus
                                              <div class="col-md-6 col-sm-6">
 
                                                   <h3>Market Pay</h3>
-
-                                                  <a href="https://www.youtube.com/watch?v=hDRkg6PG_tw" class="sectionex-btn btn btn-success"
+                                                  <p class="color-white">Online Shopping For Fresh Market</p>
+                                                  <a href="https://www.youtube.com/watch?v=hDRkg6PG_tw"
+                                                       class="sectionex-btn btn btn-success"
                                                        data-wow-delay="1.4s">Demo</a>
 
 
@@ -309,7 +333,9 @@ http://www.templatemo.com/tm-498-stimulus
 
                                                   <!-- <i class="fa fa-desktop"></i> -->
                                                   <h3>where 'ry me</h3>
-                                                  <a href="https://xd.adobe.com/view/18b8ad18-c737-4d32-a632-8abbc360b303-4deb/" class="sectionex-btn btn btn-success"
+                                                  <p class="color-white">Find Best Place For Your Best Day</p>
+                                                  <a href="https://xd.adobe.com/view/18b8ad18-c737-4d32-a632-8abbc360b303-4deb/"
+                                                       class="sectionex-btn btn btn-success"
                                                        data-wow-delay="1.4s">Demo</a>
 
 
@@ -340,29 +366,29 @@ http://www.templatemo.com/tm-498-stimulus
                               <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
                                    <h1 class="color-white">Say Thank you..</h1>
                                    <p class="color-white">
-                                        For images and component used in my Website I'll gvie cedits to 
+                                        For images and component used in my Website I'll gvie cedits to
 
                                    </p>
                                    <p>
-                                        <div class="newspaper-c">
-                                             <ul class="" type="disc" style="font-size: 17px; width: auto;">
+                                   <div class="newspaper-c">
+                                        <ul class="" type="disc" style="font-size: 17px; width: auto;">
 
-                                                  <li><a href="https://www.freepik.com/">Freepik</a></li>
-                                                  <li><a href="https://pixabay.com/">Pixabay</a></li>
-                                                  <li><a href="http://www.templatemo.com/tm-498-stimulus">Stimulus</a></li>
-                                          
-                                                  <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
-                                                  <li><a href="https://fontawesome.com/">FontAwesome</a></li>
-                                                 
-                                                  <li><a href="https://www.flaticon.com/">FlatIcon</a></li>
-                                                  
-                                             </ul>
-                                        </div>
+                                             <li><a href="https://www.freepik.com/">Freepik</a></li>
+                                             <li><a href="https://pixabay.com/">Pixabay</a></li>
+                                             <li><a href="http://www.templatemo.com/tm-498-stimulus">Stimulus</a></li>
+
+                                             <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+                                             <li><a href="https://fontawesome.com/">FontAwesome</a></li>
+
+                                             <li><a href="https://www.flaticon.com/">FlatIcon</a></li>
+
+                                        </ul>
+                                   </div>
                                    </p>
                               </div>
 
                               <div id="contact-form">
-                                 
+
                               </div>
 
                          </div>
@@ -374,14 +400,14 @@ http://www.templatemo.com/tm-498-stimulus
 
                     <div class="bg-dark col-md-3 col-sm-6">
                          <div class="contact-thumb">
-                         
+
 
                               <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
                                    <h3 class="color-white">Contact.</h3>
                                    <p><i class="fa fa-phone"></i> 099-174-6492</p>
                                    <p><i class="fa fa-envelope-o"></i> <a
                                              href="mailto:thitaphorn.pr@gmail.com">thitaphorn.pr@gmail.com</a></p>
-                                  
+
                               </div>
 
                          </div>
