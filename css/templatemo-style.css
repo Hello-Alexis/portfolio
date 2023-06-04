@@ -33,6 +33,17 @@ h1,h2,h3 {
   font-weight: 300;
 }
 
+.newspaper-c{
+  color : rgb(174, 160, 0);
+  column-count: 4;
+  column-gap: 200px;
+  width: 100%;
+}
+.newspaper {
+  column-count: 4;
+  column-gap: 200px;
+  width: auto;
+}
 h1 {
   font-size: 42px;
   padding-bottom: 14px;
@@ -96,10 +107,29 @@ p {
   border-color: transparent;
   color: #ffffff;
 }
+.sectionex-btn {
+  background-color: transparent;
+  border: 3px solid #fffffff9;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  padding: 12px 36px;
+  margin-top: 42px;
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+}
+
+.sectionex-btn:hover {
+  background: #030303;
+  border-color: transparent;
+  color: #ffffff;
+}
 
 .btn-success:focus {
-  background-color: #000;
-  border-color: transparent;
+  background-color: #ffffff00;
+  border-color: #ffffff;
 }
 
 .parallax-section {
@@ -174,6 +204,8 @@ footer {
 .bg-mgreen {
   background: #8EC697;
 }
+
+
 
 .bg-white {
   background: #ffffff;
@@ -300,7 +332,7 @@ a:hover, a:active, a:focus {
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #E3AE57;
+    color: #353535;
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -310,7 +342,7 @@ a:hover, a:active, a:focus {
 
 .custom-navbar .nav li.active > a {
     background-color: transparent;
-    color: #E3AE57;
+    color: #2ce3fc;
 }
 
 .custom-navbar .navbar-toggle {
@@ -323,7 +355,7 @@ a:hover, a:active, a:focus {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #E3AE57;
+    background: #5796e3;
     border-color: transparent;
 }
 
@@ -449,7 +481,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #experience .experience-img {
-  background: url('../images/experience-img.jpg') no-repeat;
+  background: url('../images/intern.jpg') no-repeat;
 }
 
 #experience .media-heading {
@@ -542,8 +574,9 @@ a:hover, a:active, a:focus {
 }
 
 #contact .contact-img {
-  background: url('../images/contact-img.jpg') no-repeat;
+  background: url('../images/choco-bg.jpg') no-repeat;
   min-height: 75vh;
+
 }
 
 #contact .contact-info {
