@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Tweet Program</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .tweet {
+            color: red;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="hello">Hello</p>
+
+    <script>
+        $(document).ready(function () {
+            var tweetText = "Having Lunch";
+            var tweetElement = $("<p>").addClass("tweet").text(tweetText);
+            $("#hello").after(tweetElement);
+        });
+    </script>
+</body>
+
+</html>
